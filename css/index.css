@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    background-color: #eaeaea;
+    font-family: monospace;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 90%;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid black;
+}
+
+.content {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+    width: 73%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+
+.form-search {
+    width: 25%;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+}
+
+.form-search form {
+    width: 90%;
+    height: 40px;
+    display: flex;
+}
+
+.form-search form input {
+    width: 90%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    box-sizing: border-box;
+    border: none;
+    color: black;
+}
+
+.form-search form button {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #eaeaea;
+    border: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 986px) {
+    .content {
+        flex-direction: column-reverse;
+    }
+    .post {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .form-search {
+        width: 100%;
+    }
+}
