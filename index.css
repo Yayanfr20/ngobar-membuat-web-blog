@@ -15,13 +15,17 @@ html body {
     justify-content: center;
 }
 
+.box-navbar {
+    position: fixed;
+    top: 0;
+}
+
 .navbar {
     width: 90%;
     height: 60px;
     padding: 10px;
     box-sizing: border-box;
     background-color: white;
-    margin-top: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
@@ -103,6 +107,15 @@ html body {
     color: black;
     cursor: pointer;
     margin-left: 5px;
+}
+
+.post .card {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 986px) {
