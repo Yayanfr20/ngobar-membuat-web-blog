@@ -6,7 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Jals blog - Read</title>
-     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="assets/css/index.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
@@ -35,7 +35,7 @@
                     <br>
                     <hr>
                     <br>
-                    <img src="images/images1.jpeg" width="100%" height="250" alt="">
+                    <img src="assets/images/images1.jpeg" width="100%" height="250" alt="">
                     <br><br>
                     <hr>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptatibus libero voluptates

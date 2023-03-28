@@ -1,0 +1,110 @@
+html body {
+    background-color: #eaeaea;
+    font-family: monospace;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 95%;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid black;
+}
+
+.form-post {
+    width: 95%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.mb-3 {
+    margin-bottom: 10px;
+}
+
+body label {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+body input {
+    margin-top: 5px;
+    width: 100%;
+    height: 38px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1.5px solid black;
+}
+
+body select {
+    margin-top: 5px;
+    width: 100%;
+    height: 38px;
+    box-sizing: border-box;
+    border: 1.5px solid black;
+}
+
+body textarea {
+    margin-top: 5px;
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1.5px solid black;
+}
+
+body button {
+    width: 100%;
+    height: 38px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+body button:hover {
+    background-color: white;
+    border: 2px solid blue;
+    color: blue;
+}

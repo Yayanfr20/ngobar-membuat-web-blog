@@ -2,90 +2,60 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POST</title>
-    <link rel="stylesheet" href="css/post.css">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jals blog - Posting</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+     <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+     <link rel="stylesheet" href="assets/css/post.css">
 </head>
 
 <body>
-    <div class="kotak2">
-        <h1 align="center">FORM REGIS SISWA Mts AL-HIDAYAH</h1>
-    </div>
-    <hr>
-    <hr>
-    <div class="container d-flex justify-content-center">
-
-        <div class="kotak mtp">
-            <form action="">
-                <label for="namaDepan">Nama Depan</label>
-                <br>
-                <input type="text" name="namadepan">
-                <br><br>
-                <label for="namaBelakang">Nama Belakang</label>
-                <br>
-                <input type="text" name="namaBelakang">
-                <br><br>
-                <label for="TglLahir">Tanggal Lahir</label>
-                <br>
-                <input type="date" name="TglLahir">
-                <br><br>
-                <label for="Gender">GENDER</label>
-                <br>
-                <select name="" id="">
-                    <option value="gender">-- GENDER --</option>
-                    <option value="laki-laki">Laki-laki</option>
-                    <option value="perempuan">Perempuan</option>
-                </select>
-                <br><br>
-                <label for="kendaraan"> KENDARAAN</label>
-                <br>
-                <select name="" id="">
-                    <option value="kendaraan">-- pilih kendaraan --</option>
-                    <option value="Motor">Motor</option>
-                    <option value="Mobil">Mobil</option>
-                    <option value="AngkutanUmum">Angkutan Umum</option>
-                    <option value="JalanKaki">Jalan kaki</option>
-                </select>
-                <br><br>
-                <label for="foto">Foto</label>
-                <br>
-                <input type="file" nama="foto">
-                <br><br>
-                <label for="hobi">HOBI</label>
-                <br>
-                <input type="checkbox" class="checkbox" id="melukis" value="melukis">
-                <label for="melukis">Melukis</label>
-                <br><br>
-                <input type="checkbox" class="checkbox" id="mainBola" value="mainBola">
-                <label for="mainBola">Main Bola</label>
-                <br><br>
-                <input type="checkbox" class="checkbox" id="membaca" value="membaca">
-                <label for="membaca">Membaca</label>
-                <br><br>
-                <input type="checkbox" class="checkbox" id="memancing" value="memancing">
-                <label for="memancing">Memancing</label>
-                <br><br>
-                <label for="komentar">KOMENTAR</label>
-                <br>
-                <textarea class="komentar" name="komentar" id="komentar" cols="" rows=""></textarea>
-                <br><br>
-                <small>buat akun untuk log-in !</small><br>
-                <label for="userName">User Name</label>
-                <br>
-                <input type="" name="userName">
-                <br><br>
-                <label for="password">Password</label>
-                <br>
-                <input type="password">
-                <br><br>
-                <button><a href="#">SUBMIT</a> </button>
-                <input type="reset" class="reset">
-
-            </form>
-        </div>
-    </div>
+     <!-- start navbar -->
+     <div class="container box-navbar">
+          <div class="navbar">
+               <p class="brand">Jals blog</p>
+               <div class="menu">
+                    <a href=""><i class="bi bi-house"></i>Home</a>
+                    <a href=""><i class="bi bi-plus-circle"></i>Post</a>
+               </div>
+          </div>
+     </div>
+     <!-- end navbar -->
+     <div class="container">
+          <form action="" class="form-post">
+               <h3>Posting</h3>
+               <hr>
+               <div class="mb-3">
+                    <label for="">Judul postingan</label>
+                    <input type="text" name="judul">
+               </div>
+               <div class="mb-3">
+                    <label for="">Tanggal postingan</label>
+                    <input type="date" name="tanggal">
+               </div>
+               <div class="mb-3">
+                    <label for="">kategori postingan</label>
+                    <select name="kategori" id="">
+                         <option value="">Pilih Kategori!</option>
+                         <option value="">Web programming</option>
+                         <option value="">Potografer</option>
+                         <option value="">Berita</option>
+                    </select>
+               </div>
+               <div class="mb-3">
+                    <label for="">article</label>
+                    <textarea name="" id="editor1" cols="30" rows="10"></textarea>
+               </div>
+               <div class="mb-3">
+                    <button type="submit" name="posting">Posting</button>
+               </div>
+          </form>
+     </div>
+     <script>
+     CKEDITOR.replace('editor1');
+     </script>
 </body>
 
 </html>
